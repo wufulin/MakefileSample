@@ -6,11 +6,44 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		6558D49C18656E6700E8980E /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		6558D49D18656FE000E8980E /* maze.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maze.c; sourceTree = "<group>"; };
+		658AB2431865464D00CE0263 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		658AB2451865472900CE0263 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		658AB2471865477500CE0263 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		658AB2481865478B00CE0263 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		658AB2491865479A00CE0263 /* maze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maze.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		658AB238186544E000CE0263 = {
 			isa = PBXGroup;
 			children = (
+				658AB2451865472900CE0263 /* Makefile */,
+				658AB244186546CE00CE0263 /* Header */,
+				658AB2461865473800CE0263 /* Source */,
 			);
+			sourceTree = "<group>";
+		};
+		658AB244186546CE00CE0263 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				658AB2431865464D00CE0263 /* main.h */,
+				658AB2481865478B00CE0263 /* stack.h */,
+				658AB2491865479A00CE0263 /* maze.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		658AB2461865473800CE0263 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				658AB2471865477500CE0263 /* main.c */,
+				6558D49C18656E6700E8980E /* stack.c */,
+				6558D49D18656FE000E8980E /* maze.c */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +162,7 @@
 				DEBUGGING_SYMBOLS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -138,6 +172,7 @@
 		658AB242186544E000CE0263 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -163,6 +198,7 @@
 				658AB242186544E000CE0263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
